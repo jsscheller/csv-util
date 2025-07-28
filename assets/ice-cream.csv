@@ -1,0 +1,13 @@
+Flavor_Name,Base_Type,Main_Ingredients,Includes_Mix_Ins,Color_Descriptor,Popularity_Score (1-10),Invented_Decade_Estimate,Goes_Best_With
+"Vanilla Bean Bliss",Dairy,"Real Vanilla Beans, Sweet Cream",No,"Creamy Off-White",9,1950s,"Apple Pie"
+"Midnight Chocolate Fudge",Dairy,"Dark Chocolate, Fudge Swirl, Brownie Bits",Yes,"Deep Dark Brown",8,1980s,"More Chocolate Syrup"
+"Strawberry Fields Sorbet",Sorbet,"Strawberry Puree, Lemon Juice",No,"Vibrant Pink",7,1990s,"Fresh Mint Sprig"
+"Mint Choc Chip Volcano",Dairy,"Peppermint Extract, Chocolate Chips",Yes,"Pale Green with Dark Specks",8,1970s,"Waffle Cone"
+"Pistachio Almond Dream",Dairy,"Pistachio Paste, Roasted Almonds",Yes,"Subtle Green with Nut Bits",6,1980s,"Shortbread Cookie"
+"Cosmic Cookie Dough",Dairy,"Vanilla Base, Chocolate Chip Cookie Dough Chunks",Yes,"Creamy Beige with Dark Chunks",9,1990s,"Glass of Milk"
+"Salted Caramel Swirl",Dairy,"Caramel Sauce, Sea Salt",Yes,"Tan with Golden Swirls",10,2000s,"Pretzel Pieces"
+"Mango Tango Sorbet",Sorbet,"Mango Puree, Lime Juice",No,"Bright Sunny Orange",7,2000s,"Coconut Flakes"
+"Lavender Honey Haze",Dairy,"Edible Lavender, Honey Swirl",Yes,"Pale Purple with Golden Ribbons",5,2010s,"Earl Grey Tea"
+"Oat Milk Cookies & Cream",Oat Milk,"Vanilla Oat Base, Chocolate Sandwich Cookies",Yes,"Greyish White with Black Chunks",8,2010s,
+"Rainbow Sherbet Splash",Sherbet,"Lime, Orange, Raspberry Flavors",No,"Pastel Swirl Symphony",7,1960s,"Birthday Cake"
+"Espresso Bean Buzz",Dairy,"Coffee Extract, Chocolate Covered Espresso Beans",Yes,"Rich Coffee Brown",8,1990s,
