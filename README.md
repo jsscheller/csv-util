@@ -14,4 +14,3 @@ CSV utilities.
 - `explode` function (https://github.com/medialab/xan/blob/master/docs/cmd/explode.md)
 - `changeDelim` function (https://github.com/medialab/xan/blob/master/docs/cmd/fmt.md)
 - `reverse` function (https://github.com/medialab/xan/blob/master/docs/cmd/reverse.md)
-- `chunk` function (https://github.com/medialab/xan/blob/master/docs/cmd/split.md)

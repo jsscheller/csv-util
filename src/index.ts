@@ -12,3 +12,4 @@ export * from "./frequency.ts";
 export * from "./merge.ts";
 export * from "./pad.ts";
 export * from "./sort.ts";
+export * from "./split.ts";

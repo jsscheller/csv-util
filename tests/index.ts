@@ -47,6 +47,24 @@ test("sort", async function () {
   await csvUtil.sort(input, { type: csvUtil.SortType.Alphabetic });
 });
 
+test("split chunk", async function () {
+  const input = await download("ice-cream.csv");
+  const output = await csvUtil.split(input, {
+    type: csvUtil.SplitType.Chunk,
+    value: 3,
+  });
+  assert.equal(output.length, 3);
+});
+
+test("split size", async function () {
+  const input = await download("ice-cream.csv");
+  const output = await csvUtil.split(input, {
+    type: csvUtil.SplitType.Size,
+    value: 4,
+  });
+  assert.equal(output.length, 3);
+});
+
 async function download(asset: string): Promise<File> {
   const blob = await fetch(`/assets/${asset}`).then((x) => x.blob());
   return new File([blob], asset, { type: blob.type });

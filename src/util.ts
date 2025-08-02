@@ -137,7 +137,12 @@ export class RunOutput {
   public readFile(path: string, mimeType: string = ""): File {
     const buf = this.mod.FS.readFile(path);
     const name = path.split("/").at(-1)!;
+    if (!mimeType && path.endsWith(".csv")) mimeType = "text/csv";
     return new File([buf], name, { type: mimeType });
+  }
+
+  public readDir(path: string): string[] {
+    return this.mod.FS.readdir(path);
   }
 }
 
