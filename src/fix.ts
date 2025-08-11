@@ -6,10 +6,10 @@ import * as util from "./util.ts";
  * # Examples
  *
  * ```handle
- * csv-util/pad(file = @file("ice-cream.csv"))
+ * csv-util/fix(file = @file("ingredients.csv"))
  * ```
  */
-export async function pad(
+export async function fix(
   file: File,
   /**
    * The column count of the longest row is used by default. Use this option to
@@ -17,7 +17,7 @@ export async function pad(
    */
   forceColumnCount?: number,
 ): Promise<File> {
-  const outputPath = util.outputPath(file.name, { suffix: "-pad" });
+  const outputPath = util.outputPath(file.name, { suffix: "-fix" });
   const output = await util.runXan(
     [
       "fixlengths",

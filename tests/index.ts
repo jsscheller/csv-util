@@ -3,7 +3,7 @@ import * as assert from "uvu/assert";
 import * as csvUtil from "../src/index.ts";
 
 test("frequency", async function () {
-  const input = await download("sample.csv");
+  const input = await download("ice-cream.csv");
   await csvUtil.frequency(input);
 });
 
@@ -19,31 +19,59 @@ test("count", async function () {
 });
 
 test("dedup", async function () {
-  const input = await download("sample.csv");
+  const input = await download("ice-cream.csv");
   await csvUtil.dedup(input);
 });
 
+test("dedup - select", async function () {
+  const input = await download("inventory.csv");
+  await csvUtil.dedup(input, "Category,Price");
+});
+
+test("dedup - keep last", async function () {
+  const input = await download("inventory.csv");
+  await csvUtil.dedup(input, undefined, true);
+});
+
+test("dedup - keep duplicates", async function () {
+  const input = await download("inventory.csv");
+  await csvUtil.dedup(input, undefined, undefined, true);
+});
+
 test("fill", async function () {
-  const input = await download("sample.csv");
+  const input = await download("prices.csv");
   await csvUtil.fill(input, {
     type: csvUtil.FillType.Static,
-    value: "<empty>",
+    value: "0.00",
   });
 });
 
-test("merge", async function () {
-  const first = await download("sample.csv");
-  const second = await download("sample-edit.csv");
-  await csvUtil.merge([first, second], { type: csvUtil.MergeType.Row });
+test("fill - forward", async function () {
+  const input = await download("prices.csv");
+  await csvUtil.fill(input, {
+    type: csvUtil.FillType.Forward,
+  });
 });
 
-test("pad", async function () {
-  const input = await download("ice-cream.csv");
-  await csvUtil.pad(input);
+test("append - row", async function () {
+  const first = await download("inventory.csv");
+  const second = await download("inventory-more.csv");
+  await csvUtil.append([first, second], { type: csvUtil.AppendType.Row });
+});
+
+test("append - column", async function () {
+  const first = await download("inventory.csv");
+  const second = await download("suppliers.csv");
+  await csvUtil.append([first, second], { type: csvUtil.AppendType.Column });
+});
+
+test("fix", async function () {
+  const input = await download("ingredients.csv");
+  await csvUtil.fix(input);
 });
 
 test("sort", async function () {
-  const input = await download("sample.csv");
+  const input = await download("ice-cream.csv");
   await csvUtil.sort(input, { type: csvUtil.SortType.Alphabetic });
 });
 

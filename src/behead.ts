@@ -6,7 +6,7 @@ import * as util from "./util.ts";
  * # Examples
  *
  * ```handle
- * csv-util/behead(file = @file("sample.csv"))
+ * csv-util/behead(file = @file("ice-cream.csv"))
  * ```
  */
 export async function behead(file: File): Promise<File> {

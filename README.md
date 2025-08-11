@@ -4,7 +4,7 @@ CSV utilities.
 
 ## TODO
 
-- document column selection syntax (https://github.com/medialab/xan/blob/master/docs/cmd/select.md)
+- use enum for column selection (https://github.com/medialab/xan/blob/master/docs/cmd/select.md)
 - `join` function (https://github.com/medialab/xan/blob/master/docs/cmd/join.md)
 - `slice` function (https://github.com/medialab/xan/blob/master/docs/cmd/slice.md)
 - `select` function (https://github.com/medialab/xan/blob/master/docs/cmd/select.md)

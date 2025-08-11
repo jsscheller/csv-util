@@ -22,10 +22,21 @@ export type StaticFill = {
  *
  * # Examples
  *
+ * Fill empty cells using a static value.
+ *
  * ```handle
  * csv-util/fill(
- *     file = @file("sample.csv"),
- *     fill = /Static(value = "<empty>"),
+ *     file = @file("prices.csv"),
+ *     fill = /Static(value = "0.00"),
+ * )
+ * ```
+ *
+ * Fill empty cells using the last seen, non-empty value.
+ *
+ * ```handle
+ * csv-util/fill(
+ *     file = @file("prices.csv"),
+ *     fill = /Forward,
  * )
  * ```
  */

@@ -3,6 +3,8 @@ import * as util from "./util.ts";
 /**
  * Count the number of records in a CSV file.
  *
+ * Note: the header row is not included in the count.
+ *
  * # Examples
  *
  * ```handle

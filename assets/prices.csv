@@ -1,0 +1,11 @@
+Item,Category,Price,Calories
+Apple,Fruit,0.50,95
+Banana,Fruit,,105
+Carrot,Vegetable,0.25,41
+Spinach,Vegetable,,23
+Bread,Grain,2.50,
+Pasta,Grain,1.75,221
+Milk,Dairy,3.00,
+Cheddar Cheese,Dairy,,113
+Chicken Breast,Meat,5.50,165
+Salmon,Meat,,208

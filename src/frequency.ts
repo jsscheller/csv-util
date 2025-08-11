@@ -6,7 +6,7 @@ import * as util from "./util.ts";
  * # Examples
  *
  * ```handle
- * csv-util/frequency(file = @file("sample.csv"))
+ * csv-util/frequency(file = @file("inventory.csv"))
  * ```
  */
 export async function frequency(
